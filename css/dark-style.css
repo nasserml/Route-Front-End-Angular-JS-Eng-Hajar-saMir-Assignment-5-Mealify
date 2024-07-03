@@ -1,0 +1,396 @@
+:root{
+    --primary-color-yellow-dark-mode-hue: 35;
+    
+    --primary-color-yellow-dark-mode-saturation: 72%;
+    --primary-color-yellow-dark-mode-lightness: 44%;
+
+    --color-yellow-dark-mode: hsl(var(--primary-color-yellow-dark-mode-hue), var(--primary-color-yellow-dark-mode-saturation), var(--primary-color-yellow-dark-mode-lightness));
+
+    --color-dark: hsl(0, 0%, 9%);
+    --color-159-159-159-rgb:rgb(159,159,159);
+    --color-193-126-31-rgb: rgb(193, 126, 31);
+    ---color-17-17-17-hexa: #171717;
+
+
+}
+
+#darkMoonButton{
+    cursor: pointer;
+}
+
+#lightSunButton{
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 400;
+    color: white;
+}
+
+.white-color{
+    color: white;
+}
+
+html:has(#mode:checked) body{
+    background-color: #202020;
+}
+
+
+
+/* Dark mode 
+CSS Rules ========================= */
+
+body:has(#mode:checked) #navbar{
+    background-color: #171717;
+}
+
+body:has(#mode:checked) #lightMode i.fa-sun{ 
+    display:block;
+}
+
+body:has(#mode:checked) #darkMode { 
+    display: none;
+}
+
+
+body:has(#mode:checked)  .navbar-logo h1 a{
+    color: rgb(255,255,255);
+}
+
+body:has(#mode:checked) .navbar-logo h1 a::after{
+    color: var(--color-yellow-dark-mode);
+}
+
+body:has(#mode:checked) .navbar-links ul li div a {
+    color: rgb(159, 159, 159);
+}
+
+body:has(#mode:checked) .navbar-links ul li:-chilnthd(2)  div a{
+    color: rgb(252, 252, 252);
+}
+
+
+
+body:has(#mode:checked) .border-bottom{
+    background-color: var(--color-yellow-dark-mode);
+}
+
+
+body:has(#mode:checked) .border-bottom-hover {
+    background-color: var(--color-yellow-dark-mode);
+}
+
+body:has(#mode:checked) .navbar-links .link a:hover{
+    color: rgb(252, 252, 252);
+}
+
+body:has(#mode:checked) a .icon .border-black {
+    border-color: rgb(252, 252, 252);
+}
+
+
+
+
+body:has(#mode:checked):has(#slider-navbar:target) #navbar {
+    background-color: hsl(0, 0%, 9%, 0.7);
+}
+
+
+body:has(#mode:checked):has(#slider-navbar:target) #navbar .navbar .navbar-links ul{
+    background-color: #171717;
+    border-color: rgb(41, 41, 41);
+}
+
+
+body:has(#mode:checked):has(#slider-navbar:target)  #navbar .navbar .navbar-links ul .close-icon a{
+    color: rgb(159, 159, 159);
+
+}
+
+body:has(#mode:checked):has(#slider-navbar:target) #navbar .navbar .navbar-links ul .close-icon:hover a i {
+    color:white;
+}
+
+
+body:has(#mode:checked):has(#slider-navbar:target) .navbar-links ul li:nth-child(2) div a{
+    color: rgb(159, 159, 159);
+}
+
+
+body:has(#mode:checked):has(#slider-navbar:target) .navbar-links ul li .padding-links .link a:hover{
+    color: white;
+}
+
+
+
+
+
+body:has(#mode:checked):has(#chefs:target, #gallary:target) .navbar-links ul li .link a{
+    color: var(--color-159-159-159-rgb);
+}
+body:has(#mode:checked):has(#chefs:target, #gallary:target) .navbar-links .link a:hover{
+    color: var(--color-fff-hexa);
+}
+
+
+
+body:has(#mode:checked):has(#home:target) .navbar-links ul li:nth-child(2) .link a{
+    color: var(--color-252-252-252-rgb);
+}
+
+body:has(#mode:checked):has(#chefs:target) .navbar-links ul li:nth-child(3) .link a{
+    color: var(--color-252-252-252-rgb);
+}
+
+body:has(#mode:checked):has(#gallary:target) .navbar-links ul li:nth-child(4) .link a{
+    color: var(--color-252-252-252-rgb);
+}
+
+
+
+
+
+:root{
+    --color-252-252-252-rgb: rgb(252,252,252);
+    --color-fff-hexa: #fff;
+}
+
+
+
+
+
+
+
+
+/* Home Dark Mode CSS Rules ================ */
+
+body:has(#mode:checked) #home{
+    background-color: #252525;
+}
+
+
+body:has(#mode:checked) .home-text h2{
+    color: rgb(255, 255, 255);
+}
+
+body:has(#mode:checked) .home-text p{
+    color: rgb(159, 159, 159);
+}
+
+
+body:has(#mode:checked) .book-table-button{
+    color: rgb(23, 23, 23);
+    background-color: var(--color-yellow-dark-mode);
+    --primary-color-yellow-dark-mode-lightness: 49%;
+    --bg-hover-color: hsl(var(--primary-color-yellow-dark-mode-hue),var(--primary-color-yellow-dark-mode-saturation),var(--primary-color-yellow-dark-mode-lightness));
+}
+
+body:has(#mode:checked) .book-table-button:hover{
+    background-color: var(--bg-hover-color);
+}
+
+body:has(#mode:checked) .watch-video-button{
+    color: rgb(255, 255, 255);
+}
+
+body:has(#mode:checked) .watch-video-button .icon{
+    background-image: linear-gradient(to right, var(--color-yellow-dark-mode) 0 50%, transparent 50% 100%);
+}
+
+
+body:has(#mode:checked) a.watch-video-button:hover{
+    color: var(--color-yellow-dark-mode);
+}
+
+body:has(#mode:checked) .watch-video-button .icon::before {
+    background-color: var(--color-dark);
+}
+
+body:has(#mode:checked) a.watch-video-button:hover .icon i {
+    color: var(--color-yellow-dark-mode);
+}
+
+
+
+
+
+
+
+
+
+/*  Chefs Dark Style CSS Rules ====================== */
+body:has(#mode:checked) #chefs{
+    background-color: #202020;
+}
+
+body:has(#mode:checked) .chefs-text h2{
+    color: var(--color-159-159-159-rgb);
+}
+
+
+body:has(#mode:checked) .chefs-text p{
+    color: white;
+}
+
+body:has(#mode:checked) .chefs-text p span{
+    color: var(--color-193-126-31-rgb);
+}
+
+
+
+
+body:has(#mode:checked) .chef-item {
+    background-color: var(---color-17-17-17-hexa);
+}
+
+body:has(#mode:checked) .chef-info h3 {
+    color: white;
+}
+
+
+body:has(#mode:checked) .chef-info span {
+    color: var(--color-159-159-159-rgb);
+}
+
+
+
+
+body:has(#mode:checked) .chef-info p{
+    color: var(--color-159-159-159-rgb);
+}
+
+
+
+
+
+
+:root{
+    --color-25-25-25-hexa : #252525
+}
+
+/* Gallary Dark mode CSS Style Rules ========== */
+
+body:has(#mode:checked) #gallary{
+    background-color: var(---color-17-17-17-hexa);
+}
+
+
+body:has(#mode:checked) .gallary-text h2{
+    color: var(--color-159-159-159-rgb);
+}
+
+
+body:has(#mode:checked) .gallary-text p {
+    color: white;
+}
+
+
+
+body:has(#mode:checked) .gallary-text p span{
+    color: var(--color-193-126-31-rgb);
+}
+
+
+
+:root{
+    --color-202020-hex:#202020;
+    --color-0D0D0D-hexa:#0D0D0D;
+    --color-C17E1F-hexa:#C17E1F;
+    --color-23-23-23-rgb: rgb(23,23,23);
+    --color-173-173-173-rgb: rgb(173,173,173);
+}
+
+/* Contact Dark Style CSS Rules ================= */
+body:has(#mode:checked) #contact{
+    background-color: var(--color-202020-hex);
+}
+
+
+
+body:has(#mode:checked) .contact-text h2{
+    color: var(--color-159-159-159-rgb);
+}
+
+body:has(#mode:checked) .contact-text p{
+    color: white;
+}
+
+
+body:has(#mode:checked) .contact-text p span{
+    color: var(--color-193-126-31-rgb);
+}
+
+body:has(#mode:checked) .contact-information-box {
+    background-color: var(--color-0D0D0D-hexa);
+}
+
+
+body:has(#mode:checked) .contact-information-box .icon{
+    background-color: var(--color-C17E1F-hexa);
+    color: var(--color-23-23-23-rgb);
+}
+
+
+body:has(#mode:checked) .contact-information-box h3{
+    color: var(--color-173-173-173-rgb);
+}
+
+body:has(#mode:checked) .contact-information-box p{
+    color: white;
+}
+
+
+body:has(#mode:checked) .contact-information-box .email-us a {
+    color: white;
+}
+
+
+body:has(#mode:checked) .contact-information-box .call-us a {
+    color: white;
+}
+
+body:has(#mode:checked) .contact-form{
+    background-color: var(---color-17-17-17-hexa);
+}
+
+
+body:has(#mode:checked) .contact-form form :is(input, textarea):focus {
+    border-color: var(--color-C17E1F-hexa);
+}
+
+body:has(#mode:checked) .send-message-button {
+    --background-color: var(--color-193-126-31-rgb);
+    --color: var(--color-23-23-23-rgb);
+    --hover-bg-color: hsl(35, 72%, calc(44% + 5%));
+    --hover-color: hsl(0, 0%, 9%);
+
+}
+
+
+
+
+
+body:has(#mode:checked) .footer-subscribe-form button{
+    color: rgb(23, 23, 23);
+    
+        background-color: rgb(193, 126, 31);
+    }
+    
+    
+    
+body:has(#mode:checked) .footer-subscribe-form button:hover{
+        
+        background-color:  rgb(215,140,35);
+    
+}
+
+
+
+body:has(#mode:checked) .footer-contact ul li i {
+    color: rgb(193, 126, 31);
+}
+
+
+
+
+

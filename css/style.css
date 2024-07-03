@@ -1,0 +1,1447 @@
+/* Global CSS Rules ========================================= */
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 91px;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+
+.inter-font{
+    font-family: "Inter", sans-serif;
+}
+
+.atomic-font{
+    font-family: "Amatic SC", sans-serif;
+}
+
+.open-sans-font{
+    font-family: "Open Sans", sans-serif;
+}
+
+.font-weight-700{
+    font-weight: 700;
+}
+
+
+img{
+    display: inline-block;
+}
+
+
+
+
+
+
+.main-color{
+    color: #ce1212;
+}
+.background-main-color{
+    background-color: #ce1212;
+}
+
+.color-127-127-144{
+    color: rgb(127, 127, 144);
+}
+
+.color-black{
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+:root{
+    --primary-font-open-sans:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-one-atomic:"Amatic SC", sans-serif;
+    --font-two-inter: "Inter", sans-serif;
+    --color-rgb-127-127-144: rgb(127,127, 144);
+    --color-rgb-206-18-18: rgb(206,18,18);
+    --animation-duaration: 400ms;
+}
+
+
+
+
+/*  NAvbar CSS Rules ===================================*/
+
+#navbar{
+    background-color: white;
+    box-shadow: 0px 0px 14px 0px #0000001b;
+    
+}
+
+
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5px;
+}
+
+.navbar-links ul{
+    display: flex;
+}
+
+
+.navbar-links ul{
+    list-style-type: none;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+
+.navbar-logo h1 a{
+    font-size: 30px;
+    line-height: normal;
+    color: rgb(33, 37, 41);
+    position: relative;
+}
+
+.navbar-logo h1 a::after{
+    content: ".";
+    color: #ce1212;
+    font-size: 30px;
+}
+
+
+
+
+.navbar-links .padding-links{
+    padding: 5px 15px;
+}
+.navbar-links ul li a{
+    font-size: 17px;
+    line-height: normal;
+    font-weight: 600;
+    
+}
+
+.navbar-links .link {
+    position: relative;
+}
+
+
+.border-bottom{
+    height: 2px;
+    width: 100%;
+    background-color: #ce1212;
+    position: absolute;
+    bottom: -8px;
+    transition: width var(--animation-duaration);
+    
+}
+.navbar-links .link a{
+    transition: color 0.4s;
+}
+.navbar-links .link a:hover{
+    color: #000;
+}
+.navbar-links .link a:hover+.border-bottom-hover{
+    width: 100%;
+}
+
+
+.navbar-links .link a:hover+.border-bottom{
+    width: 100%;
+}
+
+
+.border-bottom-hover{
+    height: 2px;
+    width: 0;
+    background-color: #ce1212;
+    position: absolute;
+    bottom: -8px;
+    transition: width 0.4s;
+}
+
+
+.navbar-button-dark-light label i{
+    font-size: 25px;
+    list-style: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+
+.navbar-button-dark-light label i.fa-moon{
+    color: rgb(33, 37, 41);
+}
+
+.navbar-button-dark-light label i.fa-sun{
+    color: rgb(255,255,255);
+    display: none;
+    font-weight: 400;
+}
+
+
+
+.navbar-links .close-icon{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+body:has(#chefs:target) .navbar-links ul li:nth-child(3) .link a {
+    color: black;
+}
+
+
+body:has(#chefs:target) .navbar-links ul li:nth-child(3) .link .border-bottom-hover {
+    width: 100%;
+}
+
+body:has(#chefs:target, #gallary:target) .navbar-links ul li .link a{
+    color: var(--color-rgb-127-127-144);
+}
+
+body:has(#chefs:target, #gallary:target) .navbar-links .border-bottom{
+    width: 0;
+}
+
+body:has(#chefs:target, #gallary:target) .navbar-links a:hover+.border-bottom{
+    width: 100%;
+}
+
+body:has(#chefs:target, #gallary:target) .navbar-links .link a:hover{
+    color: #000;
+}
+
+
+body:has(#gallary:target) .navbar-links ul li:nth-child(4) .link a{
+    color: black;
+}
+
+body:has(#gallary:target) .navbar-links ul li:nth-child(4) .link .border-bottom-hover{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home CSS Rules ========================================= */
+#home{
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-left{
+    /* background-color: pink; */
+}
+
+.home-right{
+    /* background-color: gold; */
+}
+
+.home-text{
+    /* background-color: teal; */
+}
+
+.home-buttons{
+    /* background-color: tan; */
+}
+
+
+.home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 95px;
+    padding: 40px 5px;
+}
+
+.home-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-right {
+    width: 40%;
+}
+
+.home-image img{
+    width: 100%;
+}
+
+
+.home-text h2{
+    font-size: 65px;
+    line-height: normal;
+    font-weight: 700;
+    color: rgb(55, 55, 63);    
+    font-family: "Amatic SC", sans-serif;
+}
+
+.home-text p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(55,55, 63);
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 20px 0px;
+}
+
+
+.home-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+.book-table-button{
+    color: white;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 400;
+    padding: 10px 25px;
+    background-color: rgb(206, 18, 18);
+    cursor: pointer;
+    border-radius: 0px 100vh 100vh;
+    transition: background-color 0.4s ;
+}
+
+.book-table-button:hover{
+    background-color: #E61414;
+}
+
+.watch-video-button{
+    color: rgb(33,37,41);
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.4s ;
+    
+} 
+
+.watch-video-button .icon{
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(206,18, 18) 0 50%, transparent 50% 100%);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    position: relative;
+    transition: color 0.4s ;
+}
+
+a.watch-video-button:hover {
+    color: #E61414;
+}
+
+.watch-video-button .icon::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.watch-video-button .icon i{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.watch-video-button .icon a{
+    transition: color 04s;
+}
+
+a.watch-video-button:hover  .icon i{
+    color: #E61414;
+}
+
+.home-image img{
+    filter: drop-shadow(4px 4px 9px #000a);
+}
+
+.home-image img:hover{
+    animation: shake 1s infinite;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10%{
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20%{
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30%{
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+
+
+
+
+/* Chefs CSS Rules ===================== */
+
+#chefs{
+    background-color: white;
+}
+
+.chefs-text{
+    /* background-color: pink; */
+}
+
+.chefs-items{
+    /* background-color: teal; */
+}
+
+.chef-item{
+    /* background-color: gold; */
+}
+
+.chef-image{
+    /* background-color: tomato; */
+}
+.social-icons{
+    background-color: gray;
+}
+
+.chef-info{
+    /* background-color: aqua; */
+}
+
+
+.chefs .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px ;
+    margin-bottom: 50px;
+    padding: 40px 5px;
+}
+
+.chefs-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.chefs-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    gap: 30px;
+    
+}
+
+.chef-item {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: scale 0.4s;
+
+    border-radius: 0.5rem;
+}
+
+.chef-item .inner{
+    border-radius: 0.5rem;
+}
+
+.chef-item:hover{
+    scale: 1.07;
+}
+
+.chef-image-social-icons{
+    position: relative;
+    overflow: hidden;
+}
+
+.chef-image::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url("../images/team-shape.svg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 3.75rem;
+}
+
+.chef-image img{
+    width: 100%;
+}
+
+
+.chef-info{
+    padding: 10px 25px 25px 25px;
+    text-align: center;
+}
+
+.chefs-text h2{
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    color: rgb(127, 127, 114);
+    font-family: var(--font-two-inter);
+}
+
+.chefs-text p{
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+    font-family: var(--font-one-atomic);
+    text-transform: uppercase;
+}
+
+.chefs-text p span{
+    color: var(--color-rgb-206-18-18);
+}
+
+
+
+.chef-info h3{
+    font-family: var(--font-two-inter);
+    font-size: 19px;
+    line-height: normal;
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+}
+
+.chef-info span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: var(--primary-font-open-sans);
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--color-rgb-127-127-144) ;
+
+}
+
+
+.chef-info p{
+    font-family: var(--primary-font-open-sans);
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-rgb-127-127-144);
+}
+
+
+
+.social-icons{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 30px;
+    right: -3.125rem;
+    border-radius: 0.3125rem;
+    transition: right 0.4s 0.4s;
+}
+
+.social-icons ul {
+    padding: 10px;
+}
+
+.social-icons ul li a i{
+    padding: 10px 5px;
+    color: rgba(55, 55, 63, 0.4);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    transition: color var(--animation-duaration);
+}
+
+
+
+.social-icons ul li a i:hover {
+    color: #37373fe6;
+}
+.chef-item:hover .social-icons{
+    right: 0.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+    --color-eee-hexa: #EEEEEE;
+    --color-33-37-41-rgb: rgb(33,37,41);
+    --color-221-221-221-rgb: rgb(221,221,221);
+}
+
+
+
+
+
+
+
+
+/* Gallary CSS Rules =================== */
+
+
+#gallary{
+    background-color: var(--color-eee-hexa);
+}
+
+
+.gallary-text{
+    /* background-color: pink; */
+}
+
+.gallary-images{
+
+    /* background-color: gold; */
+}
+
+.gallary-image-overlay{
+    /* background-color: green; */
+}
+
+.gallary-image-overlay .overlay{
+    background-color: #00000096;
+}
+
+
+.gallary{
+    overflow: auto;
+}
+
+.gallary .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary-text{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.gallary-text h2{
+    font-family: var(--font-two-inter);
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--color-rgb-127-127-144);
+
+}
+
+.gallary-text p{
+    font-family: var(--font-one-atomic);
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--color-33-37-41-rgb);
+}
+
+.gallary-text p span{
+    color: var(--color-rgb-206-18-18);
+}
+
+.gallary-images{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    height: 72.8125rem;
+}
+
+.gallary-image-overlay{
+    width: calc(calc(100% - 1.25rem*2)/3) ;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+.gallary-image-overlay .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform var(--animation-duaration);
+}
+
+.gallary-image-overlay:hover .overlay{
+    transform: translateY(0);
+}
+
+.gallary-image-overlay .overlay h2{
+    font-family: var(--font-two-inter);
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.gallary-image-overlay .overlay p{
+    font-family: var(--primary-font-open-sans);
+    color: var(--color-221-221-221-rgb);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    display: block;
+}
+
+
+.gallary-image img{
+    width: 100%;
+    transition: scale var(--animation-duaration);
+}
+
+.gallary-image-overlay:hover .gallary-image img{
+    scale: 1.1;
+}
+
+
+
+
+
+
+:root{
+    --color-f5f5f5-hexa:#F5F5F5;
+    --color-125-125-125-rgb: rgb(125,125,125);
+}
+
+
+
+/* Contact CSS Rules =============================== */
+
+#contact{
+    background-color: white;
+}
+
+.contact-text{
+    /* background-color: purple; */
+}
+
+.contact-google-map{
+    /* background-color: pink; */
+}
+
+.contact-information{
+    /* background-color: tan; */
+}
+
+.contact-information-box{
+     background-color: var(--color-f5f5f5-hexa);
+}
+
+
+.contact-form {
+    /* background-color: gold; */
+    
+}
+
+
+
+
+.contact{
+    overflow: hidden;
+}
+
+.contact .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-text{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+
+.contact-text h2{
+    font-family: var(--font-two-inter);
+    color: var(--color-rgb-127-127-144);
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.contact-text p{
+    font-family: var(--font-one-atomic);
+    color: var(--color-33-37-41-rgb);
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.contact-text p span {
+    color: var(--color-rgb-206-18-18);
+}
+
+.contact-google-map{
+    width: 100%;
+}
+
+.contact-google-map iframe{
+    width: 100%;
+    height: 21.875rem;
+}
+
+
+
+
+.contact-information{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9375rem;
+}
+
+
+
+.contact-information-box{
+    padding: 25px;
+    width: calc(calc(100% - 20px*2)/2);
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-information-box .icon{
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+    background-color: var(--color-rgb-206-18-18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.contact-information-box h3{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: var(--font-two-inter);
+    color: var(--color-125-125-125-rgb);
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.contact-information-box p{
+    font-family: var(--primary-font-open-sans);
+    color: var(--color-33-37-41-rgb);
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.contact-information-box .email-us a{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--primary-font-open-sans);
+    color: var(--color-33-37-41-rgb);
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+
+.contact-information-box .call-us a{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--primary-font-open-sans);
+    color: var(--color-33-37-41-rgb);
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+:root{
+    --box-shadow: 0 0 1.875rem #00000014;
+    --border: 2px solid hsl(0,calc(0% + 10%), calc(100% - 10%));
+    --color-light:hsl(0, 0%, 100%);
+    --color-primary: hsl( 0, 84%, 44% );
+}
+.contact-form{
+    width: 100%;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.contact-form form{
+    --gap:0.9375rem;
+    display: flex;
+    padding: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.9375rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-form form > *{
+    width: 100%;
+}
+
+
+.contact-form form input {
+    font-family: var(--primary-font-open-sans);
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--color-33-37-41-rgb);
+}
+.contact-form   input, .contact-form textarea{
+    padding: 15px;
+    border: var(--border);
+}
+
+.contact-form .input{
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: wrap;
+
+}
+
+.contact-form form :is(input, textarea) {
+    transition: border-color var(--animation-duaration);
+}
+
+.contact-form form :is(input, textarea):focus{
+    outline: none;
+    border-color: var(--color-rgb-206-18-18);
+}
+
+.contact-form .input input{
+    width: calc(calc(100% - 0.9375rem )/2 );
+}
+
+
+.contact-form textarea{
+    resize: vertical;
+    min-height: 9.375rem;
+    max-height: 18.75rem;
+}
+.button {
+    --background-color: transparent;
+    --color: var(--color-light);
+    --padding: 0.3125rem 0.75rem;
+    --border-width: 0.125rem;
+    --border-color: transparent;
+    --border-radius: 1rem;
+    --hover-bg-color: transparent;
+    --hover-color: transparent;
+    --font-size: 1rem;
+
+    padding: var(--padding);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    color: var(--color);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: background-color var(--animation-duaration), color var(--animation-duaration);
+
+
+}
+
+.send-message-button {
+    --background-color: var(--color-primary);
+    --hover-bg-color: hsl(0, 84%, calc(44% + 5%));
+    --hover-color: var(--color-light);
+    --font-size: 0.9375rem;
+    --border-radius: 100vh;
+    --padding: 12px 40px;
+    margin-top: 25px;
+    
+}
+
+button.send-message-button{
+    width: fit-content;
+    font-family: var(--primary-font-open-sans);
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.button:hover{
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+    --color-100E0F-hexa:#100E0F;
+    --color-595959-hexa:#595959;
+}
+
+/* Footer CSS Rules ==================================== */
+
+#footer{
+    --background-color: var(--color-100E0F-hexa);
+    background-color: var(--background-color);
+}
+
+
+.footer-description-socail-links{
+    /* background-color: pink; */
+}
+
+
+.footer-subscribe-quick-links{
+    /* background-color: gold; */
+}
+
+.footer-contact{
+    /* background-color: pink; */
+}
+
+
+.footer .container{
+    --gap: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+    padding: 40px 5px;
+    flex-wrap: wrap;
+}
+
+
+
+.footer-description-socail-links, .footer-contact {
+    width: calc(calc(100% - var(--gap)*2) / 4);
+}
+
+
+.footer-subscribe-quick-links{
+    width: calc(calc(100% - var(--gap)*2)/2);
+}
+
+.footer-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-logo img{
+    width: 40px;
+}
+
+
+.footer-logo h2{
+    --color: white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: var(--primary-font-open-sans);
+    
+    color: var(--color);
+}
+
+
+.footer-logo h2::after{
+    content: ".";
+    --color: var(--color-rgb-206-18-18);
+   
+    color: var(--color);
+}
+
+
+.footer-description{
+    margin-block: 10px;
+
+}
+
+.footer-description p{
+    --color: white;
+    font-family: var(--primary-font-open-sans);
+    font-size: 16px;
+    line-height: normal;
+    color: var(--color);
+    font-weight: 400;
+}
+
+
+
+.footer-social-links h3{
+    padding: 10px;
+    text-align: center;
+    --color:white;
+    --border-color:var(--color-595959-hexa);
+    font-family: var(--font-two-inter);
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 700;
+    color: var(--color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+
+.footer-social-links ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-social-links a i {
+    --color:white;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--color);
+}
+
+
+
+
+
+.footer-subscribe-quick-links h3{
+    --color:white;
+    font-family: var(--font-two-inter);
+    font-size: 19px;
+    line-height: normal ;
+    font-weight: 700;
+    color:var(--color);
+}
+
+
+.footer-subscribe-quick-links p {
+    --color: white;
+    display: block;
+    margin-block: 10px;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--color);
+}
+
+
+
+
+
+.footer-subscribe-form {
+    --gap: 5px;
+    display: flex;
+    gap: var(--gap);
+    justify-content: space-between;
+    margin-block: 1.25rem;
+}
+
+
+
+.footer-subscribe-form input{
+    flex-grow: 1;
+    padding: 0.625rem;
+    outline: none;
+}
+
+
+
+.footer-subscribe-form button{
+    background-color: var(--color-rgb-206-18-18);
+    padding: 0.625rem;
+    min-width: 6.875rem;
+    border-radius: 0;
+}
+
+.footer-subscribe-form button:hover{
+    background-color: #E61414;
+    color: white;
+}
+
+
+
+.footer-quick-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-quick-links h3{
+    font-size: 19px ;
+    line-height: normal;
+    font-weight: 900;
+    font-family: var(--font-two-inter);
+}
+.footer-quick-links ul{
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    column-gap: 1.25rem;
+}
+
+.footer-quick-links ul li{
+    flex-basis: calc(calc(100% - 1.25rem)/2);
+}
+
+.footer-quick-links ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-quick-links ul li i{
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    margin-right: 5px;
+}
+.footer-quick-links ul li{
+    color: white;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    padding: 5px;
+    font-family: var(--primary-font-open-sans);
+    transition: transform var(--animation-duaration),
+    background-color var(--animation-duaration);
+}
+
+
+
+
+
+.footer-quick-links ul li:hover{
+    transform: translateX(10px);
+    background-color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-contact h3{
+    margin-bottom: 10px;
+    font-size: 19px;
+    line-height: normal;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-contact ul li{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+
+.footer-contact ul li i{
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-rgb-206-18-18);
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 900;
+}
+
+.footer-contact ul li span {
+    display: inline-block;
+}
+
+.footer-contact ul li span, .footer-contact ul li a {
+    color: white;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
